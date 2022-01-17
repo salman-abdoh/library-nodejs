@@ -349,10 +349,11 @@ div .form {
   }
   .catog .tit-cato h1{
     background-color: white;
-     width: 332px;
+     width: 334px;
      border: 1px hsl(119deg 66% 22%) solid;
      color: hsl(119deg 66% 22%) ;
       border-radius: 5px;
+      padding: 10px 0;
       
     
       }
@@ -369,6 +370,7 @@ div .form {
      padding-left: 0px;
      margin-right:0px;
      list-style: none;
+     padding: 0;
     
        
    
@@ -386,13 +388,13 @@ div .form {
   
     display: inline-block; 
     padding: 12px;
-     margin-left: 0px;
+     margin-left: 50px;
      
 }
 .catog ul li a{
   direction: none;
    
-    
+    padding-left: 20px;
   line-height: 2;
   font-family: fangsong;
   height: 38px;
@@ -432,11 +434,11 @@ div .form {
      color: rgb(255, 255, 255);
     
     margin: 0px;
-    padding:0 50px;
+    padding:5px 50px;
     
 
      display: block;
-     width: 332px;
+     width: 334px;
     
      display: block;
      direction: rtl;
@@ -448,7 +450,7 @@ div .form {
    
  
     padding: 10px 20px;
-    width: 277%;
+    width: 251%;
     height: 35px;
     color: rgb(12, 9, 240);
     display: block;
