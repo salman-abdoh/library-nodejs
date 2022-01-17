@@ -334,3 +334,127 @@ div .form {
  
 }
 /*.............................start form*/
+* {
+    box-sizing: border-box;
+  }
+  
+  .catog{
+  grid-column: 1/5;
+  grid-row: 4/5;
+  direction: rtl;
+  margin: 8px 0px;
+  
+  
+
+  }
+  .catog .tit-cato h1{
+    background-color: white;
+     width: 332px;
+     border: 1px hsl(119deg 66% 22%) solid;
+     color: hsl(119deg 66% 22%) ;
+      border-radius: 5px;
+      
+    
+      }
+    
+  
+   
+  .catog ul{
+   
+  display: flex;
+  justify-content: flex-start;;
+         
+    color: rgb(12, 9, 240);
+   margin: 0px;
+     padding-left: 0px;
+     margin-right:0px;
+     list-style: none;
+    
+       
+   
+    
+}
+.catog ul li{
+   
+    
+    line-height: 2;
+    font-family: fangsong;
+    height: 38px;
+    
+    
+    text-align: center;
+  
+    display: inline-block; 
+    padding: 12px;
+     margin-left: 0px;
+     
+}
+.catog ul li a{
+  direction: none;
+   
+    
+  line-height: 2;
+  font-family: fangsong;
+  height: 38px;
+  
+  
+  text-align: center;
+
+  display: block; 
+  padding: 0px;
+   margin-left: 0px;
+   
+}
+.catog form{
+   
+  display: flex;
+  
+  flex-direction: column;
+  text-align: right;
+  float: right;
+         
+    color: rgb(12, 9, 240);
+   margin: 0px;
+     padding-left: 0px;
+     margin-right:0px;
+     list-style: none;
+    direction: rtl;
+       
+   
+    
+}
+
+.catog .cat-content h2{
+   
+ border-top-left-radius:5px;
+ border-top-right-radius:5px;
+          
+     color: rgb(255, 255, 255);
+    
+    margin: 0px;
+    padding:0 50px;
+    
+
+     display: block;
+     width: 332px;
+    
+     display: block;
+     direction: rtl;
+     background-color: hsl(119deg 66% 22%);
+    
+     
+ }
+.catog form select{
+   
+ 
+    padding: 10px 20px;
+    width: 277%;
+    height: 35px;
+    color: rgb(12, 9, 240);
+    display: block;
+    direction: rtl;
+    background-color: #edf6ff;
+    border: none;
+   
+    
+}
