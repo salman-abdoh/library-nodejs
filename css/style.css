@@ -460,3 +460,13 @@ div .form {
    
     
 }
+.range{
+  direction: ltr;
+  height: 50px;
+
+}
+.range input{
+  width: 239px;
+  margin-left: -107px;
+}
+}
