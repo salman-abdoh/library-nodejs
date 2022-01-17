@@ -392,6 +392,7 @@ div .form {
      
 }
 .catog ul li a{
+  text-decoration: none;
   direction: none;
    
     padding-left: 20px;
