@@ -147,15 +147,16 @@ footer .footer_up div h2{
 footer .footer_up div h3{
    color: hsl(0deg 0% 87%);
    font-weight: unset;
-   line-height: 15px;
+   line-height: 21px;
    font-family: system-ui;
    font-size: 14px;
+   word-spacing: 3px;
     
 }
 footer .footer_up .last_footer_up{
     grid-column:5/6;
        margin-bottom: 6px;
-       width: 267px;
+       width: 292px;
 }
 footer .footer_up .last_footer_up h2{
    
@@ -191,6 +192,8 @@ footer .footer_up .form_footer_up{
     text-align: center;
     height: 100px;
     border-radius: 7px;
+    margin: 7px 0 0 0;
+
 }
 footer .footer_up .form_footer_up input{
     background-color:hsl(218deg 33% 95%) ;
@@ -212,7 +215,7 @@ footer .footer_up .form_footer_up button{
     font-size: 20px;
     padding: 5px 13px;
     height: 30px;
-    margin-left: 10px;
+    margin-left: 22px;
     margin-top: 5px;
     
    
@@ -354,7 +357,7 @@ div .form {
      color: hsl(119deg 66% 22%) ;
       border-radius: 5px;
       padding: 10px 0;
-      
+      margin: 15px 0px;
     
       }
     
@@ -477,6 +480,7 @@ div .form {
   padding: 0px;
  }
  .sliders{
+   grid-column: 1/6;
    height: auto;
    display: flex;
    justify-content: center;
