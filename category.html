@@ -38,7 +38,7 @@
         </div>
     </div>
     <div id="modlesign" class="modal2">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <span onclick="document.getElementById('modlesign').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content2" >
           <div class="container">
             <h1>انشا حساب</h1>
@@ -235,16 +235,26 @@
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("modlesign");
         
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("creat_ac");
+        var btn3 = document.getElementById("sigbtn");
         
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
         
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
-          modal.style.display = "block";
+            modal.style.display = "block";
+        }
+        
+        btn2.onclick = function() {
+            modlesign.style.display = "block";
+        }
+        btn3.onclick = function() {
+            modlesign.style.display = "none";
         }
         
         // When the user clicks on <span> (x), close the modal

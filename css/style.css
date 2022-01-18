@@ -244,6 +244,7 @@ footer .footer_up{
 footer .footer_up div {
    margin: 0px 20px ;
     margin-left: 10px;
+    width: 69%;
 }
 footer .footer_up div h2{
     border-bottom: 1px hsl(0deg 0% 52%) inset ;
@@ -776,6 +777,7 @@ padding: 10px;
 background-color: rgb(227, 240, 252);
 border: none;
 width: 100%;
+margin: 5px;
 }
 .container .sigbtn{
   padding: 10px;
@@ -956,6 +958,6 @@ footer .footer_down {
 div .form {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 40px;
+  padding: 9px;
   margin: 0;
 }}
