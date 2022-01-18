@@ -9,12 +9,70 @@
     <meta name="author" content="salman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="css" href="css/style.css" rel="stylesheet">
-
+    <script src="javascript/app.js"></script>
     <link href="fonts/fontawesome-free-6.0.0-beta3-web/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2>تسجيل الدخول</h2>
+
+            <div class="form">
+                <form action="index.html">
+
+                    <input type="email" id="email" name="email" placeholder="البريد الالكتروني او رقم الجوال" required>
+
+                    <br>
+                    <input type="password" id="pass" name="pass" placeholder="كلمة السر" required>
+
+                    <br>
+                    <input type="submit" value="تسجيل الدخول">
+
+                    <br><br>
+                    <label>ليس لديك حساب؟</label><br>
+                    <button id="creat_ac" class="creat_ac" value=" انشا حساب">انشاء حساب</button>
+                </form>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+    <div id="modlesign" class="modal2">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content2" >
+          <div class="container">
+            <h1>انشا حساب</h1>
+            <hr>
+            <input type="text" placeholder="رقم الجوال" name="email" required>  
+            <p>سوف نرسل لك رمز التحقق عن طريق رساله نصيه.</p>
+            <hr>
+            <button type="submit" >ارسال رمز التحقق</button>
+            <input type="text" placeholder="الاسم الاول" name="email" required>  
+            <input type="text" placeholder="اسم العائلة" name="email" required>  
+            <input type="email" placeholder="البريد الالكتروني" name="email" required>            
+         
+      
+            
+            <input type="email" placeholder="تاكيد البريد الالكنروني" name="psw-repeat" required>            
+            <input type="password" placeholder="كلمة السر" name="psw" required>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" >اوافق علي الشروط والاحكام
+            </label>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" > التسجيل للانضمام للنشره البريديه
+            </label>
+      
+       
+      
+            <div class="clearfix">
+             
+              <button class="signupbtn">انشا حساب</button><br>
+              هل لديك حساب؟
+              <button id="sigbtn" class="sigbtn">تسجيل الدخول </button>
+            </div>
+          </div>
+        </form>
+      </div>
     <div class="contianer">
         <header class="top_header">
             <ul>
@@ -25,7 +83,9 @@
                 <li>اتصل ينا <i class="fab fa-google-plus-g"></i></li>
                 <li>من نحن <i class="fas fa-taxi"></i></li>
                 <li>الرئسية <i class="fas fa-star"></i></li>
-                <li class="last" style="border: none;">ادخل حسابك اوسجل الان<i class="fas fa-user"></i></li>
+                <button  id="myBtn" class="signup">
+                <li class="last" style="border: none;" >ادخل حسابك اوسجل الان<i class="fas fa-user"></i></li>
+            </button>
             </ul>
         </header>
         <nav>
@@ -36,60 +96,71 @@
         <section class="sliders">
             <div class="slider">
                 <div class="images">
-                  <input type="radio" name="slid" id="img1"   checked>
-                  <input type="radio" name="slid" id="img2">
-                  <input type="radio" name="slid" id="img3">
-                  <input type="radio" name="slid" id="img4">
-                  
-                
-                 <img src="image/category2.png" class="img1" alt="image1">
-                 <img src="image/category.png" class="img2" alt="image2">
-                 <img src="image/category2.png" class="img3" alt="image3">
-                 <img src="image/category.png" class="img4" alt="image4">
-               
-                
-                </div>
-                <div class="dots ">
-                  <label for="img1"></label>
-                  <label for="img2"></label>
-                  <label for="img3"></label>
-                  <label for="img4"></label>
-                  
-                </div>
+                    <input type="radio" name="slid" id="img1" checked>
+                    <input type="radio" name="slid" id="img2">
+                    <input type="radio" name="slid" id="img3">
+                    <input type="radio" name="slid" id="img4">
+
+                   
+                        <img src="image/category2.png" class="img1" alt="image1">
+                        <img src="image/category.png" class="img2" alt="image2">
+                        <img src="image/category2.png" class="img3" alt="image3">
+                        <img src="image/category.png" class="img4" alt="image4">
+
+
+                    </div>
+                    <div class="dots ">
+                        <label for="img1"></label>
+                        <label for="img2"></label>
+                        <label for="img3"></label>
+                        <label for="img4"></label>
+
+                    </div>
+                    <div class="counter ">
+                        <div class="timeover">الوقت المتبقى للعروض</div><br>
+                        <div class="alltime">
+                            <div class="time" id="days"></div>
+                            <div class="time" id="hours"></div>
+                            <div class="time" id="minutes"></div>
+                            <div class="time" id="seconds"></div>
+                        </div></div>
+
 
         </section>
-       
+
         <section class="catog">
-        <div class="link">
-         <ul>
-            <li><a href="index.html">الرئسية</a></li>
-            <li><a href="index.html">الكتب العربيه</a></li>
-            <li><a href="index.html">كتب الكترونيه</a></li>
-         </ul>
-         
-        </div>
-       <div class="tit-cato"> <h1>كتب الكترونية</h1></div>
-        <div class="cat-content">
-            <h2>تصفح النتائج</h2>
-            <form class="form-cat">
-              
-            <select >
-                <option>علامة تجارية</option><br>
-            </select>
-            <select >
-                <option>السعر</option>
-            </select>
-            <div class="range">
-           <input type="range" >
-        </div>
-            <select >
-                <option>صيغة الكتاب</option>
-            </select>
+            <div class="link">
+                <ul>
+                    <li><a href="index.html">الرئسية</a></li>
+                    <li><a href="index.html">الكتب العربيه</a></li>
+                    <li><a href="index.html">كتب الكترونيه</a></li>
+                </ul>
 
-            </form>
+            </div>
+            <div class="tit-cato">
+                <h1>كتب الكترونية</h1>
+            </div>
+            <div class="cat-content">
+                <h2>تصفح النتائج</h2>
+                <form class="form-cat">
+
+                    <select>
+                        <option>علامة تجارية</option><br>
+                    </select>
+                    <select>
+                        <option>السعر</option>
+                    </select>
+                    <div class="range">
+                        <input type="range">
+                    </div>
+                    <select>
+                        <option>صيغة الكتاب</option>
+                    </select>
+
+                </form>
 
 
-        </div>
+            </div>
         </section>
         <footer>
             <div class="footer_up">
@@ -130,10 +201,11 @@
                     <h3>920000089</h3>
                 </div>
                 <div class="callus">
-                    <h2 >انضم الي نشراتنا البريديه</h2>
+                    <h2>انضم الي نشراتنا البريديه</h2>
                     <form class="form_footer_up">
-                    <input type="email" required placeholder="ادخل بريدك الالكتروني   "><br>
-                    <button type="button">اشتراك</button></form>
+                        <input type="email" required placeholder="ادخل بريدك الالكتروني   "><br>
+                        <button type="button">اشتراك</button>
+                    </form>
                 </div>
                 <div class="last_footer_up">
                     <h2>تواصل معنا</h2>
@@ -160,7 +232,33 @@
         </footer>
 
     </div>
-
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 
 </html>
