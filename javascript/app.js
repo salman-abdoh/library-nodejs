@@ -1,7 +1,7 @@
 
 /*counter*/
 const countdown=()=>{
-const upperDate=new Date('jun 30 , 2022 00:00:00').getTime();
+const upperDate=new Date('feb 11 , 2022 00:00:00').getTime();
 const currentDate=new Date().getTime();
 const diffDate=upperDate-currentDate;
 const second=1000;
@@ -18,10 +18,10 @@ var d=document.getElementById('days');
 var h=document.getElementById('hours');
 var m=document.getElementById('minutes');
 var s=document.getElementById('seconds');
-d.innerHTML=m_days;
-h.innerHTML=m_hours;
-m.innerHTML=m_minutes;
-s.innerHTML=m_seconds;
+d.innerHTML=m_days +"days";
+h.innerHTML=m_hours+"hours";
+m.innerHTML=m_minutes +"minutes";
+s.innerHTML=m_seconds +"second";
 }
 setInterval(countdown,1000);
 /*************** */
