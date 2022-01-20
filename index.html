@@ -90,8 +90,10 @@
             </ul>
         </header>
         <nav>
-            <div class="backage"><i class="fas fa-shopping-cart"></i></div>
-            <div class="searth"><input type="search" placeholder="البحث"></div>
+            <div class="backage" id="back"><span id="count">0</span><i class="fas fa-shopping-cart"></i></div>
+           <form id="search">
+            <div class="searth" ><input type="text" id="search "  onkeyup="filter()" placeholder="البحث"></div>
+        </form>
             <div class="logo"><img src="image/logo.png"></div>
         </nav>
         <section class="sliders">
@@ -128,65 +130,45 @@
                         <div class="time" id="seconds"></div>
                     </div>
                     </div></div>
-
+            
         </section>
+       
         <section class="books">
-            <div class="bookstype">
-            <img src="image/details.png">
-            <h2>'kdsjc'ks</h2>
-            <h5>ds;kc;ldsak;al</h5>
-            <h2>1526</h2>
-            <div>
+            <h1>العروض الحاليه</h1>
+            <div class="bookstype" id="bookt">
+            <button class="btn_img" ><img src="image/details.png"></button>
+            <h2 id="bookname">كتاب الكتروني</h2>
+            <h5>clkdsjhcljskd.nc</h5>
+            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+            <div class="fass">
                 <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
+                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                <i class="fas fa-star"></i>
             </div>
         </div>
-        <div class="bookstype">
-            <img src="image/details.png">
-            <h2>'kdsjc'ks</h2>
-            <h5>ds;kc;ldsak;al</h5>
-            <h2>1526</h2>
-            <div>
+        <div class="bookstype" id="bookt">
+            <button class="btn_img" ><img src="image/2.png"></button>
+            <h2 id="bookname">كتاب الكتروني</h2>
+            <h5>clkdsjhcljskd.nc</h5>
+            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+            <div class="fass">
                 <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
+                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                <i class="fas fa-star"></i>
             </div>
         </div>
-        <div class="bookstype">
-            <img src="image/details.png">
-            <h2>'kdsjc'ks</h2>
-            <h5>ds;kc;ldsak;al</h5>
-            <h2>1526</h2>
-            <div>
+        <div class="bookstype" id="bookt">
+            <button class="btn_img" ><img src="image/3.png"></button>
+            <h2 id="bookname">كتاب الكتروني</h2>
+            <h5>clkdsjhcljskd.nc</h5>
+            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+            <div class="fass">
                 <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
+                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                <i class="fas fa-star"></i>
             </div>
         </div>
-        <div class="bookstype">
-            <img src="image/details.png">
-            <h2>'kdsjc'ks</h2>
-            <h5>ds;kc;ldsak;al</h5>
-            <h2>1526</h2>
-            <div>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
-            </div>
-        </div>
-        <div class="bookstype">
-            <img src="image/details.png">
-            <h2>'kdsjc'ks</h2>
-            <h5>ds;kc;ldsak;al</h5>
-            <h2>1526</h2>
-            <div>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
-            </div>
-        </div>
-        <var><var>v</var></var>
+      
 
         </section>
         <footer>
@@ -299,6 +281,29 @@
           if (event.target == modal2) {
             modal2.style.display = "none";
           }
+        }
+        /*search filter*/
+        function filter(){
+        var fvalue, inputt,bookt, b ,i,books;
+        inputt = document.getElementById("search");
+        fvalue =document.getElementById("search").value.toUpperCase();
+        bookt= document.getElementById("bookt");
+        books= document.getElementById("books");
+        b=books.getElementsByTagName('div');
+        for(i=0;i<b.length;i++){
+          var a =b[i].getElementsByTagName('h5')[0];
+          if(a.innerHTML.toUpperCase().indexOf(fvalue)> -1){
+            bookt.style.display="block"
+          }else{
+            bookt.style.display="none"
+          }}}
+      
+        /*******count*/
+        var cookicount = 0;
+        function add(){
+            cookicount = cookicount +1;
+            document.getElementById("count").innerHTML=cookicount;
+          
         }
         </script>
 </body>

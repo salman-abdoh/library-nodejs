@@ -89,7 +89,7 @@
             </ul>
         </header>
         <nav>
-            <div class="backage"><i class="fas fa-shopping-cart"></i></div>
+            <div class="backage"><span id="count">0</span><i class="fas fa-shopping-cart"></i></div>
             <div class="searth"><input type="search" placeholder="البحث"></div>
             <div class="logo"><img src="image/logo.png"></div>
         </nav>
@@ -127,8 +127,8 @@
 
 
         </section>
-
-        <section class="catog">
+        <section class="catogall">
+        <div class="catog">
             <div class="link">
                 <ul>
                     <li><a href="index.html">الرئسية</a></li>
@@ -161,7 +161,64 @@
 
 
             </div>
-        </section>
+            </div>
+       
+       
+        <div class="books">
+       
+        <div class="bookstype" id="bookt">
+            <button class="btn_img" ><img src="image/3.png"></button>
+            <h2 id="bookname">كتاب الكتروني</h2>
+            <h5>clkdsjhcljskd.nc</h5>
+            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+            <div class="fass">
+                <i class="fas fa-user"></i>
+                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                <i class="fas fa-star"></i>
+            </div>
+            
+        </div>
+            
+            <div class="bookstype" id="bookt">
+            <button class="btn_img" ><img src="image/details.png"></button>
+            <h2 id="bookname">كتاب الكتروني</h2>
+            <h5>clkdsjhcljskd.nc</h5>
+            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+            <div class="fass">
+                <i class="fas fa-user"></i>
+                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="bookstype" id="bookt">
+            <button class="btn_img" ><img src="image/2.png"></button>
+            <h2 id="bookname">كتاب الكتروني</h2>
+            <h5>clkdsjhcljskd.nc</h5>
+            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+            <div class="fass">
+                <i class="fas fa-user"></i>
+                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="bookstype" id="bookt">
+            <button class="btn_img" ><img src="image/3.png"></button>
+            <h2 id="bookname">كتاب الكتروني</h2>
+            <h5>clkdsjhcljskd.nc</h5>
+            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+            <div class="fass">
+                <i class="fas fa-user"></i>
+                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                <i class="fas fa-star"></i>
+            </div>
+
+        </div>
+         
+        
+      
+
+        </div>
+    </section>
         <footer>
             <div class="footer_up">
                 <div>
@@ -272,6 +329,13 @@
           if (event.target == modal2) {
             modal2.style.display = "none";
           }
+        }
+          /*******count*/
+          var cookicount = 0;
+        function add(){
+            cookicount = cookicount +1;
+            document.getElementById("count").innerHTML=cookicount;
+          
         }
         </script>
 </body>

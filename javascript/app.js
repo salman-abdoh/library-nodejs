@@ -115,3 +115,13 @@ success.style.display="block"
 
 
 }
+/***********
+ * 
+ */
+ var cookicount = 0;
+        function add(){
+            cookicount = cookicount +1;
+            document.getElementById("count").innerHTML=cookicount;
+            localStorage.setItem("cookicount" ,cookicount);
+            cookicount=localStorage.getItem("cookicount");
+        }

@@ -88,6 +88,7 @@ nav {
   position: relative;
 }
 
+
 element.style {
 }
 .counter {
@@ -188,7 +189,7 @@ nav{
          
  }
  nav .searth input{
-     color: hsl(215deg 18% 79%);
+     color: hsl(215deg 84% 1%);
      border: none;
     border-radius: 10px;
     height: 34px;
@@ -198,6 +199,18 @@ nav{
 nav .logo img{
     float: right;
     margin-right: 35px;
+}
+nav .backage{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ nav .backage span{
+  background: red;
+  width: 30px;
+  height: 32px;
+    color: white;
+    border-radius: 50%;
 }
 footer{
     display: grid;
@@ -388,6 +401,25 @@ nav .fas{
   
     
 }
+/*catalog*/
+.catogall .books{
+  width: 100%;
+    margin-top: 181px;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.catogall{
+  grid-column: 1/6;
+    grid-row: 4/5;
+    direction: rtl;
+    margin: 8px 0px;
+    display: grid;
+    grid-template-columns: 23% 73%;
+    width: 100%;
+    align-items: start;
+    justify-content: space-between;
+}
 /*.................login............start form*/
 .model{
   height: 100vh;
@@ -463,132 +495,99 @@ div .form {
   }
   
   .catog{
-  grid-column: 1/5;
-  grid-row: 4/5;
-  direction: rtl;
-  margin: 8px 0px;
-  
+    grid-column: 1/2;
+    /* grid-row: 4/5; */
+    direction: rtl;
+    margin: 8px 0px;
+    width: 115%;
   
 
   }
   .catog .tit-cato h1{
     background-color: white;
-     width: 334px;
-     border: 1px hsl(119deg 66% 22%) solid;
-     color: hsl(119deg 66% 22%) ;
-      border-radius: 5px;
-      padding: 10px 0;
-      margin: 15px 0px;
-    
+    width: 100%;
+    border: 1px hsl(119deg 66% 22%) solid;
+    color: hsl(119deg 66% 22%);
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 15px 0px;
       }
     
   
    
   .catog ul{
-   
-  display: flex;
-  justify-content: flex-start;;
-         
+    display: flex;
     color: rgb(12, 9, 240);
-   margin: 0px;
-     padding-left: 0px;
-     margin-right:0px;
-     list-style: none;
-     padding: 0;
-    
-       
-   
-    
+    margin: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
 }
 .catog ul li{
    
     
-    line-height: 2;
-    font-family: fangsong;
-    height: 38px;
-    
-    
-    text-align: center;
-  
-    display: inline-block; 
-    padding: 12px;
-     margin-left: 50px;
-     
-}
-.catog ul li a{
-  text-decoration: none;
-  direction: none;
-   
-    padding-left: 20px;
+  margin-left: 49px;
   line-height: 2;
   font-family: fangsong;
   height: 38px;
-  
-  
   text-align: center;
-
-  display: block; 
-  padding: 0px;
-   margin-left: 0px;
-   
-}
-.catog form{
-   
-  display: flex;
-  
-  flex-direction: column;
-  text-align: right;
-  float: right;
-         
-    color: rgb(12, 9, 240);
-   margin: 0px;
-     padding-left: 0px;
-     margin-right:0px;
-     list-style: none;
-    direction: rtl;
-       
+  display: inline-block;
+  margin-left: 56px;
+  margin-left: 2px;
    
     
 }
 
 .catog .cat-content h2{
    
- border-top-left-radius:5px;
- border-top-right-radius:5px;
-          
-     color: rgb(255, 255, 255);
-    
-    margin: 0px;
-    padding:5px 50px;
-    
-
-     display: block;
-     width: 334px;
-    
-     display: block;
-     direction: rtl;
-     background-color: hsl(119deg 66% 22%);
-    
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 5px 50px;
+  display: block;
+  width: 100%;
+  display: block;
+  direction: rtl;
+  background-color: hsl(119deg 66% 22%);
      
  }
 .catog form select{
    
  
-    padding: 10px 20px;
-    width: 251%;
-    height: 35px;
-    color: rgb(12, 9, 240);
-    display: block;
-    direction: rtl;
-    background-color: #edf6ff;
-    border: none;
+  padding: 10px 20px;
+  width: 100%;
+  height: 35px;
+  color: rgb(12, 9, 240);
+  display: block;
+  direction: rtl;
+  background-color: #edf6ff;
+  border: none;
    
     
 }
+.catog form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  float: right;
+  color: rgb(12, 9, 240);
+  margin: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  list-style: none;
+  direction: rtl;
+  width: 100%;
+}
+.catogall .bookstype img {
+    width: 97%;
+}
 .range{
-  direction: ltr;
-  height: 50px;
-
+  width: 214px;
+    margin-left: -107px;
 }
 .range input{
   width: 239px;
@@ -608,12 +607,28 @@ div .form {
    align-items: center;
 margin:20px  0px;
  }
+ .catogall .books {
+  width: 99%;
+  /* margin: 13px; */
+  margin-top: 181px;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  justify-content: space-between;}
  .slider{
    position: relative;
    width: 90%;
    overflow: hidden;
 
- }
+ } .catogall .books .bookstype {
+  display: flex;
+  border: 1px rgb(223 223 223) solid;
+  width: 16vw;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  font-family: serif;
+}
  .images{
    position: relative;
    display: flex  ;
@@ -960,20 +975,72 @@ margin: 10px;
 }
 .bookstype{
   display: flex;
-  border: 1px rgb(66, 66, 66) solid;
+  border: 1px rgb(223 223 223) solid;
   width: 19vw;
   flex-direction: column;
   align-items: center;
   margin: 5px;
+  font-family: serif;
 }
-.bookstype div{
+.bookstype h2,h5{
+  
+color: hsl(214deg 6% 39%);
+}
+.bookstype h2{
+  font-weight: 400;
+  color: rgb(3, 5, 8);
+  }
+.bookstype .cost{line-height: 0.5;
+  margin: 12px 0;
+  color: red;}
+  .bookstype .cost span{
+    font-size: 10px;
+    font-weight: 100;
+    color: hsl(214deg 7% 57%);}
+.bookstype .fass{
+  margin: 10px 0;
   width: 100%;
   display: flex;
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: stretch;
+  color: hsl(218deg 25% 35%);
 
+}
+.bookstype .fass .fa-shopping-cart::before {
+  content: "\f07a";
+  color: red;
+  font-size: 30px;}
+.bookstype button {
+  border: none;
+    background-color: none;
+    background: white;
+    margin: 10px 0;
+    width: 100%;
+}
+.bookstype .fass button {
+  border: none;
+    background-color: none;
+    background: white;
+   margin: 0px;
+ 
+}
+.bookstype img{
+  width: 97%;
+ 
+}
+.books h1{
+  margin: 5px 49px;
+  grid-column: 1/6;
+    background-color: white;
+    color: black;
+    text-align: end;
+}
+.fass .fas .fa-shopping-cart{
+  background-color: #e64040;
+  font-weight: 600;
+  font-size: 30px;
 }
 @media (max-width:600px){
   .images img {
@@ -1017,6 +1084,7 @@ footer .footer_down {
   font-family: system-ui;
   word-spacing: 7px;
 }
+
 .top_header {
   grid-column: 1/7;
   display: flex;
@@ -1065,8 +1133,17 @@ nav {
   position: relative;
 }
 
-element.style {
+ nav .backage{
+  display: flex;
+    flex-direction: column;
 }
+ nav .backage span{
+  background: red;
+    padding: 4px;
+    color: white;
+    border-radius: 50%;
+}
+
 .counter {
     /* height: 4px; */
     background-color: #faf2f282;
