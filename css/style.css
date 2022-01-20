@@ -973,7 +973,7 @@ margin: 10px;
   justify-content: space-evenly;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: stretch;
-}
+
 }
 @media (max-width:600px){
   .images img {
@@ -1135,7 +1135,7 @@ footer .footer_down {
   display: flex;
   font-size: 4px;
   position: absolute;
-  bottom: 0px;
+  bottom:25px;
   left: 1%;
   direction: rtl;
   /* padding: 10px; */
@@ -1153,4 +1153,12 @@ div .form {
   padding: 20px;
   border: 1px solid #888;
   width: 85%;
-  height: 43%;}}
+  height: 43%;}
+  #img3:checked ~ .img3 {
+    margin-left: -174%;
+}
+#img2:checked ~ .img2 {
+  margin-left: -100%;
+}
+
+}
