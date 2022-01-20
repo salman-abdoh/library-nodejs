@@ -453,7 +453,7 @@ input[type=submit]:hover {
 div .form {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 10px;
+  padding: 21px;
   margin: 0 0%;
  
 }
@@ -717,7 +717,8 @@ margin:20px  0px;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 30%; /* Could be more or less, depending on screen size */
+  width: 27%;
+  height: 55%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -765,6 +766,7 @@ float: right;
   display: flex;
   flex-direction: column;
   width: 52%;
+  height: 90%;
 
 }
 .container{display: flex;
@@ -948,6 +950,31 @@ margin: 10px;
   background-color: rgb(226, 39, 39);
 }
 /*@media mobile start*//**************************************/
+
+/*booooooooks*/
+.books{
+  width: 100vw;
+  grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.bookstype{
+  display: flex;
+  border: 1px rgb(66, 66, 66) solid;
+  width: 19vw;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+.bookstype div{
+  width: 100%;
+  display: flex;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+}
+}
 @media (max-width:600px){
   .images img {
     width: 100%;
@@ -1119,4 +1146,11 @@ div .form {
   background-color: #f2f2f2;
   padding: 9px;
   margin: 0;
-}}
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 17% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 85%;
+  height: 43%;}}

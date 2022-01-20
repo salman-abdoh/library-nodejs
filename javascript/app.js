@@ -61,3 +61,57 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+//start checkout//
+var info_perso=document.getElementById("info_perso");
+var info_bank=document.getElementById("info_bank");
+var exept=document.getElementById("exept");
+var success=document.getElementById("success");
+
+var next1=document.getElementById("next1");
+var next2=document.getElementById("next2");
+var next3=document.getElementById("next3");
+var back1=document.getElementById("back1");
+var back2=document.getElementById("back2");
+var prog = document.getElementById("prog")
+
+next1.onclick = function(){
+info_perso.style.left="-660px"
+prog.style.width="50%"
+info_bank.style.left="0px"
+
+
+
+}
+next2.onclick = function(){
+info_bank.style.left="-660px"
+prog.style.width="75%"
+exept.style.left="0px"
+
+
+
+}
+back1.onclick = function(){
+info_perso.style.left="0px"
+prog.style.width="25%"
+info_bank.style.left="660px"
+
+
+
+}
+back2.onclick = function(){
+info_bank.style.left="0px"
+prog.style.width="50%"
+exept.style.left="660px"
+
+
+
+}
+
+next3.onclick = function(){
+exept.style.display="none"
+prog.style.width="100%"
+success.style.display="block"
+
+
+
+}
