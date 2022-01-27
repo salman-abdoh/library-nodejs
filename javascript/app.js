@@ -125,6 +125,7 @@ success.style.display="block"
             localStorage.setItem("cookicount" ,cookicount);
             cookicount=localStorage.getItem("cookicount");
         }
+          
         function langChange()
         {
             var styles = document.getElementsByTagName('link');
@@ -134,6 +135,18 @@ success.style.display="block"
             }
             else{
                en.setAttribute('href', 'css/style.css');
+            }
+        }
+
+        function toog()
+        {
+            var toog = document.getElementById('head');
+           
+            if(toog.style.display="none"){
+            toog.style.display="block";
+            }
+            else{
+              toog.style.display="none";
             }
         }
         /******slid */
