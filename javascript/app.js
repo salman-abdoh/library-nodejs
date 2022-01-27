@@ -137,12 +137,12 @@ success.style.display="block"
                en.setAttribute('href', 'css/style.css');
             }
         }
-
+/***toggl */
         function toog()
         {
             var toog = document.getElementById('head');
            
-            if(toog.style.display="none"){
+            if(toog.style.display==="none"){
             toog.style.display="block";
             }
             else{
