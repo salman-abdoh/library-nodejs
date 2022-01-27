@@ -77,7 +77,8 @@
     <div class="contianer">
         <header class="top_header">
             <ul>
-                <li><i class="fas fa-user"></i>English</li>
+                <button   class="signup" id="lang" onclick="langChange()">
+                    <li><i class="fas fa-user"></i>English</li></button>
                 <li>YERاليمن <i class="fab fa-tiktok"></i></li>
                 <li>سياسة الخصوصيه <i class="fas fa-map-marker"></i></li>
                 <li>المساعده <i class="far fa-question-circle"></i></li>
@@ -95,41 +96,62 @@
             <div class="logo"><img src="image/logo.png"></div>
         </nav>
         <section class="sliders">
-            <div class="slider">
-                <div class="images">
-                    <input type="radio" name="slid" id="img1" checked>
-                    <input type="radio" name="slid" id="img2">
-                    <input type="radio" name="slid" id="img3">
-                    <input type="radio" name="slid" id="img4">
+        
+        <div class="slideshow-container">
 
-                   
-                        <img src="image/category2.png" class="img1" alt="image1">
-                        <img src="image/category.png" class="img2" alt="image2">
-                        <img src="image/category2.png" class="img3" alt="image3">
-                        <img src="image/category.png" class="img4" alt="image4">
-
-
-                    </div>
-                    <div class="dots ">
-                        <label for="img1"></label>
-                        <label for="img2"></label>
-                        <label for="img3"></label>
-                        <label for="img4"></label>
-
-                    </div>
-                    <div class="counter ">
-                        <div class="timeover">الوقت المتبقى للعروض</div><br>
-                        <div class="alltime">
-                            <div class="time" id="days"></div>
-                            <div class="time" id="hours"></div>
-                            <div class="time" id="minutes"></div>
-                            <div class="time" id="seconds"></div>
-                        </div></div>
-
-
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade first">
+            
+              <img src="image/category2.png" style="width:100%; ">
+            
+            </div>
+          
+            <div class="mySlides fade">
+              
+              <img src="image/category.png" style="width: 100vw;
+              height: 277px">
+            
+            </div>
+          
+            <div class="mySlides fade">
+            
+              <img src="image/category2.png" style="width:100%">
+             
+            </div>
+             
+            <div class="mySlides fade">
+               
+                <img src="image/category.png" style="width: 100vw;
+                height: 277px">
+              
+              </div>
+            
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div class="dotdiv">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          <div class="counter ">
+            <div class="timeover">الوقت المتبقى للعروض</div><br>
+            <div class="alltime">
+                <div class="time" id="days"></div>
+                <div class="time" id="hours"></div>
+                <div class="time" id="minutes"></div>
+                <div class="time" id="seconds"></div>
+            </div>
+        </div>
         </section>
 
-        <section class="catog">
+        <section class="catogdet">
             <div class="link">
                 <ul>
                     <li><a href="index.html">الرئسية</a></li>
@@ -140,21 +162,89 @@
 
             </div>
            <div class="bookdetail">
-               <img src="image/details.png"></div>
-          
-        </section>
-        <section class="books">
-            <img src="image/details.png">
-            <h2>'kdsjc'ks</h2>
-            <h5>ds;kc;ldsak;al</h5>
-            <h2>1526</h2>
-            <div>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-user"></i>
+             <div class="bookimg"> <img src="image/details.png">
+             <img src="image/details.png" height="50px" width="50px" style="position: absolute; bottom: 0px;top: 409px;left: 43%;"></div>
+             <div style=" margin: 0 20px; font-family: system-ui;">
+             <div class="bookcost"><h2>لانك الله(كتاب الكتروني)</h2>
+                <h3 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h3></div>
+                <div class="databook">
+                 <br><span> Echo:وحدة البيع</span>
+                 <br><span style="color: hsl(45deg 98% 58%);"> <span style="color: hsl(216deg 96% 41%);">(15المراجعات)</span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                 <br><span>رقم المنتج 4 IBBdsd5رقم الصنف </span></div>
+                 <div class="type">
+                     <h5>الصيغ المتوفره:</h5>
+                    <input type="checkbox"  checked >   كتاب الكتروني <i class="far fa-question-circle"></i> <h3 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h3><br>
+                     <input type="checkbox" >  كتاب مطبوع   <h3 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h3></div>
+            
             </div>
-
+             <div class="addtocrash">
+             <div class="addtocrash1">    <h5> <span> ملاحضه : </span>سيتم اضافة هذا الكتاب الالكتروني الي مكتبتك في قارئ جرير <br></h5></div>
+             <div  class="addtocrash2">
+                 <div class="addtocrash2_1">
+                     <select>
+                         <option>1</option>
+                         
+                     </select>
+                     <button><i class="fas fa-shopping-cart"></i>اضف الي السلة</button>
+                 </div >
+                 <div class="addtocrash2_2">
+                 <h5>  تسوق امن<i class="far fa-question-circle"></i></h5>
+                 <h5>اصلي ومضمون<i class="far fa-question-circle"></i></h5>
+                 <h5>شحن سريع ومجاني<i class="far fa-question-circle"></i></h5>
+                
+               
+                 </div> 
+             </div>
+            
+             <div  class="addtocrash3"><button><i class="fas fa-share-alt"></i> مشاركة</button>
+                <button><i class="fas fa-star"></i> المفضلة</button>
+                <button> <i class="fas fa-exchange-alt"></i> مقارنه</button>
+            </div>
+            
+             <div  class="addtocrash4"><button><i class="fas fa-share-alt"></i> مشاركة</button>
+                <button><i class="fas fa-star"></i> المفضلة</button>
+                <button><i class="fas fa-exchange-alt"></i> مقارنه</button></div>
+            </div> </div>
         </section>
+        <section class="detbook">
+            <h3>كتاب يتحدث عن بعض اسما الله الحسنى وكيف نتعايش معها </h3>
+        </section>
+       <section class="table">
+           <h1>المواصفات</h1>
+           <table class="tablepro">
+             
+             <tr>
+                 <td class="col1">رقم الصنف</td>
+                 <td class="col2">IBB1243</td>
+             </tr>
+             <tr>
+                <td class="col1">رقم المنتج</td>
+                <td class="col2">4</td>
+            </tr>
+            <tr>
+                <td class="col1">المولف</td>
+                <td class="col2">دار الحضارة للنشر والتوزيع </td>
+               
+            </tr>
+            <tr>
+                <td class="col1">تاريخ النشر</td>
+                <td class="col2">2016 </td>
+            </tr>
+            <tr>
+                <td class="col1">صيغة الكتاب</td>
+                <td class="col2">Ebook </td>
+            </tr>
+            <tr>
+                <td class="col1">عدد الصفحات</td>
+                <td class="col2"> 182</td>
+            </tr>
+            <tr>
+                <td class="col1">اللغة</td>
+                <td class="col2">عربي </td>
+            </tr>
+           </table>
+
+       </section>
         <footer>
             <div class="footer_up">
                 <div>

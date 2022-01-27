@@ -8,7 +8,10 @@
     <meta name="keywords" content="book,book, book, book">
     <meta name="author" content="salman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
     <link id="css" href="css/style.css" rel="stylesheet">
+  
     <script src="javascript/app.js"></script>
     <link href="fonts/fontawesome-free-6.0.0-beta3-web/css/all.css" rel="stylesheet">
 </head>
@@ -74,10 +77,11 @@
           </div>
         </form>
       </div>
-    <div class="contianer">
+    
         <header class="top_header">
             <ul>
-                <li><i class="fas fa-user"></i>English</li>
+                <button   class="signup" id="lang" onclick="langChange()">
+                <li><i class="fas fa-user"></i>English</li></button>
                 <li>YERاليمن <i class="fab fa-tiktok"></i></li>
                 <li>سياسة الخصوصيه <i class="fas fa-map-marker"></i></li>
                 <li>المساعده <i class="far fa-question-circle"></i></li>
@@ -89,16 +93,36 @@
                 </button>
             </ul>
         </header>
+        <div class="contianer">
         <nav>
             <div class="backage" id="back"><span id="count">0</span><i class="fas fa-shopping-cart"></i></div>
-           <form id="search">
-            <div class="searth" ><input type="text" id="search "  onkeyup="filter()" placeholder="البحث"></div>
-        </form>
+           
+            <div class="searth" ><input type="text" id="search"  onkeyup="filter()" placeholder="dc"></div>
+        
             <div class="logo"><img src="image/logo.png"></div>
         </nav>
-        <section class="sliders">
-                
-            <div class="slider">
+       <section class="sliders">
+           <!--     <div class="container">
+        <div class="slider">
+            <img src="image/category.png">
+        </div>
+        <div class="slider">
+            <img src="image/category2.png">
+        </div>
+        <div class="slider">
+            <img src="image/category.png">
+        </div> <div style="text-align: center;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div></div>
+        <div style="text-align: center;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>-->
+        <!--    <div class="slider">
                 <div class="images">
                     <input type="radio" name="slid" id="img1" checked>
                     <input type="radio" name="slid" id="img2">
@@ -129,45 +153,357 @@
                         <div class="time" id="minutes"></div>
                         <div class="time" id="seconds"></div>
                     </div>
-                    </div></div>
+                    </div></div>-->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade first">
+                         
+                          <img src="image/category2.png" style="width:100%; ">
+                        
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          
+                          <img src="image/category.png" style="width: 100vw;
+                          height: 277px">
+                        
+                        </div>
+                      
+                        <div class="mySlides fade">
+                         
+                          <img src="image/category2.png" style="width:100%">
+                         
+                        </div>
+                         
+                        <div class="mySlides fade">
+                           
+                            <img src="image/category.png" style="width: 100vw;
+                            height: 277px">
+                          
+                          </div>
+                        
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      <br>
+                      
+                      <!-- The dots/circles -->
+                      <div class="dotdiv">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                      </div>
+                      <div class="counter ">
+                        <div class="timeover">الوقت المتبقى للعروض</div><br>
+                        <div class="alltime">
+                            <div class="time" id="days"></div>
+                            <div class="time" id="hours"></div>
+                            <div class="time" id="minutes"></div>
+                            <div class="time" id="seconds"></div>
+                        </div>
+                    </div>
+    
+            
+        </section>
+        <section class="depart">
+            <h1>تصفح حسب القسم</h1>
+            <div class="dept dept1" style="color: hsl(10deg 42% 26%);"><i class="fas fa-shopping-cart"></i><h2>دين</h2></div>
+            <div class="dept dept2" style="color: hsl(23deg 92% 56%);"><i class="fas fa-shopping-cart"></i><h2>تاريخ</h2></div>
+            <div class="dept dept3" style="color: hsl(257deg 20% 51%);"><i class="fas fa-shopping-cart"></i><h2>روايات</h2></div>
+            <div class="dept dept4" style="color: hsl(333deg 60% 50%);"><i class="fas fa-shopping-cart"></i><h2>سياسة</h2></div>
+            <div class="dept dept5" style="color: hsl(198deg 75% 42%);"><i class="fas fa-shopping-cart"></i><h2>اقتصاد</h2></div>
+            <div class="dept dept6" style="color: hsl(91deg 62% 44%);"><i class="fas fa-shopping-cart"></i><h2>طبخ</h2></div>
+            <div class="dept dept7" style="color: hsl(341deg 90% 35%);"><i class="fas fa-shopping-cart"></i><h2>تربية</h2></div>
+        </section>
+        <section class="departimags">
+           
+            <div class="dept"><img src="image/1111.png" alt=""></div>
+            <div class="dept"><img src="image/12121.png"alt></div>
             
         </section>
        
-        <section class="books">
+        <section class="books" id="books">
             <h1>العروض الحاليه</h1>
             <div class="bookstype" id="bookt">
-            <button class="btn_img" ><img src="image/details.png"></button>
-            <h2 id="bookname">كتاب الكتروني</h2>
-            <h5>clkdsjhcljskd.nc</h5>
-            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
-            <div class="fass">
-                <i class="fas fa-user"></i>
-                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
-                <i class="fas fa-star"></i>
+                <button class="btn_img" ><img src="image/details.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>لانك الله رحله الي السما السابعة</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
             </div>
-        </div>
-        <div class="bookstype" id="bookt">
-            <button class="btn_img" ><img src="image/2.png"></button>
-            <h2 id="bookname">كتاب الكتروني</h2>
-            <h5>clkdsjhcljskd.nc</h5>
-            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
-            <div class="fass">
-                <i class="fas fa-user"></i>
-                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
-                <i class="fas fa-star"></i>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/2.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>الي الذي اسرني حبة(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div> 
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/5.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كبرياء وهوى (كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
             </div>
-        </div>
-        <div class="bookstype" id="bookt">
-            <button class="btn_img" ><img src="image/3.png"></button>
-            <h2 id="bookname">كتاب الكتروني</h2>
-            <h5>clkdsjhcljskd.nc</h5>
-            <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
-            <div class="fass">
-                <i class="fas fa-user"></i>
-                <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
-                <i class="fas fa-star"></i>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/4.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>خلف قوتي ضعف يحبك </h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
             </div>
-        </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/3.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كتالوج الحب(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/details.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>لانك الله رحله الي السما السابعة</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/2.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>الي الذي اسرني حبة(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/5.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كبرياء وهوى (كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/4.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>خلف قوتي ضعف يحبك </h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/3.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كتالوج الحب(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/details.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>لانك الله رحله الي السما السابعة</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/2.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>الي الذي اسرني حبة(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/5.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كبرياء وهوى (كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/4.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>خلف قوتي ضعف يحبك </h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/3.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كتالوج الحب(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/details.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>لانك الله رحله الي السما السابعة</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/2.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>الي الذي اسرني حبة(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/5.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كبرياء وهوى (كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/4.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>خلف قوتي ضعف يحبك </h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/3.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كتالوج الحب(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/details.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>لانك الله رحله الي السما السابعة</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/2.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>الي الذي اسرني حبة(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/5.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كبرياء وهوى (كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/4.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>خلف قوتي ضعف يحبك </h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+            <div class="bookstype" id="bookt">
+                <button class="btn_img" ><img src="image/3.png"></button>
+                <h2 id="bookname">كتاب الكتروني</h2>
+                <h5>كتالوج الحب(كتاب الكتروني)</h5>
+                <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
+                <div class="fass">
+                    <i class="fas fa-star"></i>
+                    <button class="btn_cart" onclick="add()"> <i class="fas fa-shopping-cart"></i></i></button>
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+            </div>
+          
       
 
         </section>
@@ -289,10 +625,10 @@
         fvalue =document.getElementById("search").value.toUpperCase();
         bookt= document.getElementById("bookt");
         books= document.getElementById("books");
-        b=books.getElementsByTagName('div');
+       b=books.getElementsByClassName('bookstype');
         for(i=0;i<b.length;i++){
-          var a =b[i].getElementsByTagName('h5')[0];
-          if(a.innerHTML.toUpperCase().indexOf(fvalue)> -1){
+          var a =b[i].getElementsByTagName('h5')[i];
+          if(a.textContent.toUpperCase().indexOf(fvalue)> -1){
             bookt.style.display="block"
           }else{
             bookt.style.display="none"
@@ -305,6 +641,8 @@
             document.getElementById("count").innerHTML=cookicount;
           
         }
+        
+      
         </script>
 </body>
 

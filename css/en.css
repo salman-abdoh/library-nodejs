@@ -1458,7 +1458,7 @@ color: hsl(214deg 6% 39%);
     font-weight: 100;
     font-family: monospace;
     word-spacing: 7px;
-    padding: 12px;
+    padding: 28px;
 
   }
   /*taaaaaaaaaaaable*/
@@ -1516,8 +1516,6 @@ color: hsl(214deg 6% 39%);
     width: 90%;
     height: auto;
 }
-.addtocrash {
-  height: 100%;}
   .catogall {
     grid-column: 1/6;
     /* grid-row: 4/5; */
@@ -1798,3 +1796,40 @@ div .form {
 }
 
 }
+
+  body{text-align: left;
+    
+ direction: ltr;}
+section{text-align: left;
+      direction: ltr;}
+div{text-align: left;
+        direction: ltr;}
+header{text-align: left;
+            direction: ltr;
+        float: left;}
+footer{text-align: left;
+   direction: ltr;}
+   span{text-align: left;
+    direction: ltr;}
+    .top_header li{text-align: left;
+        direction: ltr;}
+        .top_header ul{text-align: left;
+            direction: ltr;}
+            .top_header{text-align: left;
+                direction: ltr;}
+            h5{text-align: left;
+                direction: ltr;}
+                h3{text-align: left;
+                    direction: ltr;}
+                    h2{text-align: left;
+                        direction: ltr;}
+                        a{text-align: left;
+                            direction: ltr;}
+                          .table{text-align: left;
+                                direction: ltr;}
+                                .table h1{text-align: left;
+                                    direction: ltr;}
+                                    .catogall{text-align: left;
+                                        direction: ltr;}
+                                 h1{text-align: left;
+                                    direction: ltr;}
