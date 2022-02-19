@@ -12,7 +12,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
+var cateRouter= require('./routes/category');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -26,6 +26,7 @@ app.use('public/javascripts', express.static(path.join(__dirname, 'public/javasc
 
 
 app.use('/', indexRouter);
+app.use('/category', cateRouter);
 app.use('/users', usersRouter);
 
 
