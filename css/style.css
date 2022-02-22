@@ -52,8 +52,7 @@ footer .footer_down {
   background-color: hsl(220deg 33% 98%);
 }
 
-element.style {
-}
+
 .top_header ul {
     border: 1px hsl(222deg 33% 92%) solid;
     display: flex;
@@ -759,7 +758,7 @@ div .form {
   /* padding: 5px; */
   /* margin: 0px 12px; */
   width: 110px;
-  font-size: 13px;
+  font-size: 15px;
  
   
  
@@ -1516,6 +1515,9 @@ color: hsl(214deg 6% 39%);
    #toggl {
     display: none;
   }
+  header{
+    display: block;
+  }
 @media (max-width:600px){
   #toggl {
     display: block;
@@ -1840,3 +1842,5 @@ div .form {
 }
 
 }
+
+  

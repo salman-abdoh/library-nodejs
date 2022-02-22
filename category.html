@@ -90,13 +90,13 @@
                 <li>اتصل ينا <i class="fab fa-google-plus-g"></i></li>
                 <li>من نحن <i class="fas fa-taxi"></i></li>
                 <li>الرئسية <i class="fas fa-star"></i></li>
-                <button id="myBtn" class="signup">
+                <button id="mybtn" class="signup">
                     <li class="last" style="border: none;">ادخل حسابك اوسجل الان<i class="fas fa-user"></i></li>
                 </button>
             </ul>
         </header>
         <nav>
-            <div class="backage"><span id="count">0</span><i class="fas fa-shopping-cart"></i></div>
+            <div class="backage"><span id="count">0</span><a href="checkout.html"><i style="color: #435370;" class="fas fa-shopping-cart"></i></a></div>
             <div class="searth"><input id="search" onkeyup="filter()" type="search" placeholder="البحث"></div>
             <div class="logo"><img src="image/logo.png"></div>
         </nav>
@@ -198,7 +198,8 @@
             <div class="books" id="books">
 
                 <div class="bookstype" id="bookt">
-                    <button class="btn_img" ><img src="image/4.png"></button>
+
+                    <button class="btn_img"  ><a href="detail.html"><img src="image/4.png"></a></button>
                     <h2 id="bookname">كتاب الكتروني</h2>
                     <h5>خلف قوتي ضعف يحبك </h5>
                     <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
@@ -209,7 +210,7 @@
                     </div>
                 </div>
                 <div class="bookstype" id="bookt">
-                    <button class="btn_img" ><img src="image/3.png"></button>
+                    <button class="btn_img" ><a href="detail.html"><img src="image/3.png"></a></button>
                     <h2 id="bookname">كتاب الكتروني</h2>
                     <h5>كتالوج الحب(كتاب الكتروني)</h5>
                     <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
@@ -220,7 +221,7 @@
                     </div>
                 </div>
                 <div class="bookstype" id="bookt">
-                <button class="btn_img" ><img src="image/details.png"></button>
+                <button class="btn_img" ><a href="detail.html"><img src="image/details.png"></a></button>
                 <h2 id="bookname">كتاب الكتروني</h2>
                 <h5>لانك الله رحله الي السما السابعة</h5>
                 <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
@@ -231,7 +232,7 @@
                 </div>
             </div>
             <div class="bookstype" id="bookt">
-                <button class="btn_img" ><img src="image/2.png"></button>
+                <button class="btn_img" ><a href="detail.html"><img src="image/2.png"></a></button>
                 <h2 id="bookname">كتاب الكتروني</h2>
                 <h5>الي الذي اسرني حبة(كتاب الكتروني)</h5>
                 <h2 class="cost">ر.س 1500 <br><span>شامل الضريبه</span></h2>
@@ -456,7 +457,7 @@
         var modal2 = document.getElementById("modlesign");
 
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        var btn = document.getElementById("mybtn");
         var btn2 = document.getElementById("creat_ac");
         var btn3 = document.getElementById("sigbtn");
 
